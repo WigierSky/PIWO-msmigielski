@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --copy-green: #435150;
+  --primary-green: #00857c;
+  --secondary-green: #85f3ec;
+
+  --copy-orange: #6c3b01;
+  --primary-orange: #ffc989;
+  --secondary-orange: #fff7ee;
+
+  --white: #ffffff;
+
+  --outer-radius: 1rem;
+  --inner-radius: 0.5rem;
+
+  --large-font-size: 1.5rem;
+  --medium-font-size: 1.125rem;
+  --small-font-size: 0.75rem;
+
+  --hover-transition: all 0.3s ease-in-out;
+
+  --shadow: 0px 4px 16px rgba(67, 81, 80, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #3b3b3b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0px 100px;
+  column-gap: 20px;
+}
+
+.navbar {
+  background-color: var(--white);
+  padding: 1.5rem 100px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--copy-green);
+  font-weight: bold;
+  font-size: var(--large-font-size);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 3rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu-item {
+  font-size: var(--small-font-size);
+  color: var(--copy-green);
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  color: #6c4801;
+  transition: var(--hover-transition);
+}
+
+h3 {
+  font-size: var(--large-font-size);
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.75rem;
+  margin-bottom: 1.5vh;
+}
+
+p {
+  font-size: var(--small-font-size);
+  font-weight: normal;
+  line-height: 1.5rem;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+i {
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.dark {
+  color: var(--copy-green);
+}
+
+.green {
+  color: var(--primary-green);
+}
+
+.orange {
+  color: var(--copy-orange);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.hero-section {
+  /* height: 100vh; */
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 64px;
+}
+
+
+.hero-img-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  height: 85vh;
+  margin-top: 48px;
+}
+
+.hero-dots {
+  width: 50%;
+  
+}
+
+.hero-title {
+  width: 100%;
+  align-self: center;
+  justify-self: flex-start;
+  position: relative;
+}
+
+.hero-text {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-section {
+  font-size: var(--small-font-size);
+  height: 60vh;
+  width: 32vw;
+  min-width: 310px;
+  margin-left: 0;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr;
+}
+
+.input-fields-section {
+  align-self: center;
+  display: grid;
+  grid-template-rows: 15vh 15vh;
+  align-items: center;
+}
+
+.login-btn-section {
+  align-self: center;
+  justify-self: center;
+}
+
+.login-btn {
+  padding: 1vw 2vw;
+}
+
+button:hover {
+  background-color: #ffcd69 ;
+}
+
+.login-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.register-btn a:link,
+.register-btn a:visited,
+.register-btn a:hover {
+  color: #6c4801;
+  text-decoration: none;
+}
+
+
+.forgot-password {
+  align-self: flex-end;
+}
+
+.forgot-password a:link,
+.forgot-password a:visited,
+.forgot-password a:hover {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.forgot-password a:hover {
+  color:#6c4801;
+}
+
+
+label {
+  align-self: flex-start;
+}
+
+
+.about-section {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  margin: 0 25% 9rem 25%;
+
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.about-section-icon {
+  width: 35%;
+}
+
+
+.about-text {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.feature-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  background-color: #fff8e4;
+  margin: 4vw;
+  padding: 10vh 6vw;
+}
+
+.feature-box {
+  background-color: #fff;
+  height: auto;
+  padding: 5vh 5vw;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-box p {
+  text-align: center;
+  line-height: 1.75;
+}
+
+h2 {
+  color: #6c4801;
+  font-size: var(--medium-font-size);
+}
+
+.booking-section {
+  background-color: #e5eeff;
+  padding: 8rem 0;
+}
+
+.booking-section-title {
+
+  margin-bottom: 6rem;
+}
+
+.house-section {
+  color: #151e50;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  height: auto;
+  margin: 8vh;
+}
+
+.house-card {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.house-card[mode="horizontal"] {
+  flex-direction: row;
+}
+
+.house-card[mode="vertical"] {
+  flex-direction: column;
+}
+
+.house-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.house-img-container[mode="vertical"] {
+  height: 250px;
+  width: 100%;
+}
+
+.house-img-container[mode="horizontal"] {
+  width: 110px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.house-img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.house-img[mode="horizontal"] {
+  height: 100%;
+}
+
+.house-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.house-details {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.house-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.house-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-price {
+  color: #6c4801;
+  font-weight: 700;
+}
+
+.house-card[type="card"]:nth-of-type(1) {
+  grid-area: 1/1/3/2;
+}
+
+.house-card[type="card"]:nth-of-type(2) {
+  grid-area: 1/2/2/3;
+}
+
+.house-card[type="card"]:nth-of-type(3) {
+  grid-area: 2/2/3/3;
+}
+
+.house-card[type="card"]:nth-of-type(4) {
+  grid-area: 1/3/3/4;
+}
+
+.bed-icon {
+  stroke: #151e50;
+  height: 2rem;
+  width: 2rem;
+}
+
+.bedroom-info {
+  font-size: var(--small-font-size);
+}
+
+h1 {
+  font-size: var(--medium-font-size);
+  font-weight: 400;
+}
+
+
+
+
+.booking-btn {
+  color: #3b3b3b;
+  background-color: #A5B3FF;
+}
+
+.booking-btn:hover {
+  color: #3b3b3b;
+  background-color: #b7c2ff;
+}
+
+footer {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 8rem 4rem 4rem 4rem;
+}
+
+.footer-background-section {
+  height: 100%;
+  width: 65%;
+  align-self: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.footer-background {
+  align-self: flex-end;
+  background-color:  #FFF8E4;
+  height: 200px;
+  width: 100%;
+}
+
+
+
+.call-to-action-section {
+  width: 35%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-header {
+  text-align: start;
+}
+.footer-btn {
+  align-self: flex-start;
+}
+
+.footer-images {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: grid;
+  width: 50vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 4fr 1fr;
+  gap: 1rem;
+
+}
+
+.footer-img {
+  max-width: 100%;
+  object-fit:cover;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.footer-details {
+  display: flex;
+  gap: 0.5rem;
+  align-content: center;
+}
+
+.footer-icon {
+  height: 1.55rem;
+}
+
+.footer-el[type="footer"]:nth-of-type(1) {
+  grid-area: 1/1/2/2;
+}
+
+.footer-el[type="footer"]:nth-of-type(2) {
+  grid-area: 1/2/2/3;
+}
+
+.footer-el[type="footer"]:nth-of-type(3) {
+  grid-area: 2/1/3/2;
+}
+
+.footer-el[type="footer"]:nth-of-type(4) {
+  grid-area: 2/2/3/3;
+}
+
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.search-container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: var(--inner-radius);
+  box-shadow: var(--shadow);
+  width: 80%;
+}
+
+input {
+  border: 0.1px solid #98a9ff;
+  border-radius: 4px;
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5vh;
+  font-size: var(--medium-font-size);
+  transition: var(--hover-transition);
+}
+
+input::placeholder {
+  color: var(--copy-green);
+  font-size: var(--medium-font-size);
+  opacity: 1 0;
+}
+
+input:focus {
+  border-bottom: 1px solid var(--primary-green);
+  outline: none;
+  font-size: var(--medium-font-size);
+}
+
+button {
+  font-size: var(--small-font-size);
+  background: #ffc044;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+.primary-green {
+  color: var(--copy-green);
+  background-color: var(--secondary-green);
+}
+
+.primary-green:hover {
+  color: var(--white);
+  background-color: var(--primary-green);
+  transition: var(--hover-transition);
+}
+
+.primary-orange {
+  color: var(--copy-orange);
+  background-color: var(--primary-orange);
+}
+
+.primary-orange:hover {
+  color: var(--secondary-orange);
+  background-color: var(--copy-orange);
+  transition: var(--hover-transition);
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0px 25px;
+    column-gap: 10px;
+  }
+
+  .navbar {
+    padding: 1.5rem 25px;
+    width: 100%;
+  }
+
+  .menu {
+    column-gap: 3rem;
+  }
+  .logo {
+    font-size: var(--medium-font-size);
+  }
+
+  h3 {
+    font-size: var(--medium-font-size);
+    line-height: 32px;
+  }
+}
