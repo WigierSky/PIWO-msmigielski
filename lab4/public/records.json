@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "imgSource": "assets/house 1.jpg",
+    "bedsCount": "4",
+    "address": "10115 Bridlevale Dr",
+    "description": "With ample natural light and breathtaking views of the surrounding landscape, this is an opportunity to own a truly exceptionaltton property in a prime location.",
+    "price": "53000"
+  },
+  {
+    "id": 2,
+    "imgSource": "assets/house 2.jpg",
+    "bedsCount": "3",
+    "address": "616 N Beverly Dr",
+    "description": "With high end finishes, and state of the art technology, this stunning home offers the perfect blend of luxury and functionality",
+    "price": "490000"
+  },
+  {
+    "id": 3,
+    "imgSource": "assets/house 3.jpg",
+    "bedsCount": "4",
+    "address": "1219 Sunset Plaza Dr",
+    "description": "Enjoy spacious, light-filled rooms that flow seamlessly together, creating an environment that is both inviting and awe inspiring.",
+    "price": "570000"
+  },
+  {
+    "id": 4,
+    "imgSource": "assets/house 4.jpg",
+    "bedsCount": "3",
+    "address": "8824 Hollywood Blvd",
+    "description": "This breathtaking modern house for sale boasts an open concept layout, sleek finishes, and expansive windows that offer stunning views of the surrounding landscape",
+    "price": "475000"
+  }
+]
